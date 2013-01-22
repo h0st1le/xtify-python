@@ -16,22 +16,22 @@ Functionality
 As of version 0.1 only the Xtify Push API 2.0 is implemented. Mostly because it
 was the only one I needed, at least for now....
 
-Currently Available Classes:
+Available Classes:
 PushNotification, PushContent, PushAction, PushRichContent
 
 Usage Examples
 ==============
 
     >>> import xtify
-    >>> xtify = xtify.PushNotification(appKey='myAppKey', apiKey='myApiKey)
-    >>> xtify.pushNotification.sendAll=True
-    >>> xtify.pushNotification.content.subject='greetings earthling'
-    >>> xtify.pushNotification.content.message='take me to your leader'
-    >>> xtify.pushNotification.push()
+    >>> pushNotif = xtify.PushNotification(appKey='myAppKey', apiKey='myApiKey)
+    >>> pushNotif.sendAll=True
+    >>> pushNotif.content.subject='greetings earthling'
+    >>> pushNotif.content.message='take me to your leader'
+    >>> pushNotif.push()
 
     >>> import xtify
     >>> pushContent = xtify.PushContent(
         subject='greetings earthling', message='take me to your leader')
-    >>> pushNotification = xtify.pushNotification(
+    >>> pushNotif = xtify.pushNotification(
         appKey='myAppKey', apiKey='myApiKey', sendall=True, content=pushContent)
-    >>> pushNotification.push()
+    >>> pushNotif.push()
