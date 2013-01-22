@@ -3,7 +3,7 @@ from distutils.core import setup
 version = '0.1'
 app = 'xtify'
 description = 'Python module for using the Xtify webservice API'
-url = 'http://xtify.com/'
+url = 'https://github.com/h0st1le/xtify-python'
 readme = open('README.md').read()
 
 setup(
@@ -18,7 +18,7 @@ setup(
     py_modules=["xtify"],
     license='BSD',
     classifiers=[
-        'Development Status :: 1 - Alpha',
+        'Development Status :: 3 Alpha',
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
